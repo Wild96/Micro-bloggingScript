@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background: grey
+}
+
+body {
+    font-family: Saira, sans-serif;
+    font-size: 1em;
+    color: #000000;
+    max-width: 1200px;
+    background: white;
+    margin: auto;
+}
+
+.main-heading{
+    font-size:20px;
+    color:white;
+    text-align:center;
+    padding:0px;
+    justify-content: center;
+}
+.main-content{
+    display:flex;
+    flex-direction: column;
+    padding-right:20px;
+    margin:0px;
+    justify-content: space-evenly;
+}
+h1 {
+    font-family: "Avenir Next", sans-serif;
+    font-size: 1.4em;
+    font-weight: 200;
+    color: #7D7C7D;
+    padding-top: 1.5em;
+    text-align: center;
+}
+
+h3 {
+    font-family: "Avenir Next", sans-serif;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+p { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin:0px 0px 0px 0px;
+    
+}
+
+
+/*Header*/
+
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #F2F2F2;
+    padding: 2.3em 0;
+    background: #dfe3ee;
+}
+
+.logo {
+    margin-left: 5%;
+}
+
+.logo img {
+    display: block;
+}
+
+nav {
+    margin: 1.5em 0 0 5%;
+    background:  #dfe3ee;
+}
+
+header ul li {
+    display: inline-block;
+    padding: 0 1.4em 0 0;
+    font-size: 0.9em;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #7D7C7D;
+}
+
+li a.active {
+    color: #000000;
+    border-bottom: 2px solid #000000;
+    font-weight: 300;
+}
+
+li a:hover {
+    color: #B6B6B6;
+}
+img{
+    width:100px;
+    height:60px;
+}
+
+/*CSS Grid on watch-grid container*/
+
+.watch-grid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    justify-content: center;
+
+}
+
+.watch {
+
+        display:flex;
+       
+        flex-direction: row;
+    
+    
+}
+
+.watch-image {
+    display: block;
+    width: 47vw;
+}
+
+.watch-info {
+    margin-top: 0px;
+}
+
+.watch-info p {
+    font-size: 0.85em;
+    font-weight: 500;
+    margin-top: 2px;
+}
+
+
+
+/*Media Query - screen larger then 600px*
+
+@media screen and (min-width : 600px) {
+    .watch-grid {
+        grid-template-columns: 33.33% 33.33% 33.33%;
+        margin-top: 54px;
+    }
+
+    .watch {
+        width: 31vw;
+        margin: 0 auto 45px;
+
+    }
+
+    .watch-image {
+        width: 31vw;
+    }
+
+    h1 {
+        padding:0px;
+    }
+
+    .header-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .logo {
+        margin-left: 2.3em;
+    }
+
+    nav {
+        align-self: center;
+        margin: 0 0.8em 0 0;
+    }
+}
+
+@media screen and (min-width : 1200px) {
+    body {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .watch {
+        width: 370px;
+    }
+
+    .watch-image {
+        width: 370px;
+    }
+}
+
+main{
+    margin-bottom:0px;
+    padding : 0px;
+    flex-direction: row;
+    justify-content: space-between; 
+
+}
+/*Footer*/
+
+footer {
+    background:  #dfe3ee;
+    padding: 3.3em;
+    text-align: center;
+    margin-top:0px;
+    
+    
+}
+
+footer p {
+    font-family: Roboto, sans-serif;
+    font-size: 0.7em;
+    font-weight: 300;
+    color: #A4A4A4;
+    line-height: 130%;
+    margin-top:0px;
+    padding:0px;
+    
+}
+
+footer p a {
+    text-decoration:none;
+    color: #A4A4A4;
+}
+
+footer img {
+    padding: 0.4em 0 1.3em 0;
+}
